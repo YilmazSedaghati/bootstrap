@@ -60,14 +60,30 @@
                 <label for="cognome"  class="form-label">Cognome</label>
                 <input type="cognome" class="form-control" id="cognome" placeholder="Inserisci il cognome dell'autore" />
             </div>
-                <div class="mb-3">
-                    <label for="exampleFormControlInput1" class="form-label">Email address</label>
-                    <input type="email" class="form-control" id="exampleFormControlInput1"
-                        placeholder="name@example.com">
+                <div class="mb-3 col-12">
+                    <label for="exampleFormControlInput1" class="form-label">Titolo</label>
+                    <input type="titolo" class="form-control" id="exampleFormControlInput1"
+                        placeholder="inserisci il titolo del libro">
                 </div>
-                <div class="mb-3">
-                    <label for="exampleFormControlTextarea1" class="form-label">Example textarea</label>
-                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                <div class="col-12 col-md-4">
+                    <label class="form-label" for="book-type">Genere</label>
+                    <select class="form-select" id="book-type">
+                      <option selected>Scegli il genere</option>
+                      <option value="1">Romanzo</option>
+                      <option value="2">Fantastico</option>
+                      <option value="3">Horror</option>
+                      <option value="4">Epica</option>
+                      <option value="5">Fantascientifico</option>
+                    </select>
+                  </div>
+                <div class="col-12 col-md-4">
+                    <label for="Book-year" class="form-label">Anno della pubblicazione</label>
+                    <input type="text" class="form-control" id="exampleFormControlInput1"
+                   placeholder="inserisci l'anno">
+                </div>
+                <div class="col-12 col-md-4">
+                    <label for="cod-isbn" class="form-label">ISBN#</label>
+                    <input type="text" class="form-control" id="cod-isbn" placeholder="Inserisci codice ISBN#"  >
                 </div>
             </div>    
         </div>
