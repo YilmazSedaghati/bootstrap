@@ -26,7 +26,7 @@
                 <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#">Catalogo Libri</a>
+                            <a class="nav-link active" aria-current="page" href="nuovolibro.html">Catalogo Libri</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#">Anagrafica Utenti</a>
@@ -51,41 +51,62 @@
             <div class="h1 strong">Nuovo Libro</div>
         </div>
         <div class="container">
-        <form class="row gy-3">
-            <div class="col-12 col-md-6">
-                <label for="nome" class="form-label">Nome Autore</label>
-                <input id="nome" class="form-control" type="text" placeholder="Inserisci il nome dell'autore" />
-            </div>
-            <div class="col-12 col-md-6">
-                <label for="cognome"  class="form-label">Cognome</label>
-                <input type="cognome" class="form-control" id="cognome" placeholder="Inserisci il cognome dell'autore" />
-            </div>
+            <form class="row gy-3">
+                <div class="col-12 col-md-6">
+                    <label for="nome" class="form-label"><strong>Nome Autore</strong></label>
+                    <input id="nome" class="form-control" type="text" placeholder="Inserisci il nome dell'autore" />
+                </div>
+                <div class="col-12 col-md-6">
+                    <label for="cognome" class="form-label"><strong>Cognome Autore</strong></label>
+                    <input type="text" class="form-control" id="cognome"
+                        placeholder="Inserisci il cognome dell'autore" />
+                </div>
                 <div class="mb-3 col-12">
-                    <label for="exampleFormControlInput1" class="form-label">Titolo</label>
-                    <input type="titolo" class="form-control" id="exampleFormControlInput1"
-                        placeholder="inserisci il titolo del libro">
+                    <label for="title" class="form-label"><strong>Titolo</strong></label>
+                    <input type="text" class="form-control" id="title" placeholder="inserisci il titolo del libro">
                 </div>
                 <div class="col-12 col-md-4">
-                    <label class="form-label" for="book-type">Genere</label>
+                    <label class="form-label" for="book-type"><strong>Genere</strong></label>
                     <select class="form-select" id="book-type">
-                      <option selected>Scegli il genere</option>
-                      <option value="1">Romanzo</option>
-                      <option value="2">Fantastico</option>
-                      <option value="3">Horror</option>
-                      <option value="4">Epica</option>
-                      <option value="5">Fantascientifico</option>
+                        <option selected><strong>Scegli il genere</strong></option>
+                        <option value="1">Romanzo</option>
+                        <option value="2">Fantastico</option>
+                        <option value="3">Horror</option>
+                        <option value="4">Epica</option>
+                        <option value="5">Fantascientifico</option>
                     </select>
-                  </div>
-                <div class="col-12 col-md-4">
-                    <label for="Book-year" class="form-label">Anno della pubblicazione</label>
-                    <input type="text" class="form-control" id="exampleFormControlInput1"
-                   placeholder="inserisci l'anno">
                 </div>
                 <div class="col-12 col-md-4">
-                    <label for="cod-isbn" class="form-label">ISBN#</label>
-                    <input type="text" class="form-control" id="cod-isbn" placeholder="Inserisci codice ISBN#"  >
+                    <label for="Book-year" class="form-label">
+                        <strong>Anno della pubblicazione</strong>
+                    </label>
+                    <input type="text" class="form-control" id="Book-year" placeholder="inserisci l'anno">
                 </div>
-            </div>    
+                <div class="col-12 col-md-4">
+                    <label for="cod-isbn" class="form-label">
+                        <strong>ISBN#</strong>
+                    </label>
+                    <input type="text" class="form-control" id="cod-isbn" placeholder="Inserisci codice ISBN#">
+                </div>
+                <div class="col-12">
+                    <label for="Textarea" class="form-label"><strong>Note</strong></label>
+                    <textarea class="form-control" id="Textarea" rows="6"
+                        placeholder="Inserisci eventuali note sul libro"></textarea>
+                </div>
+                <div class="col-12">
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                        <label class="form-check-label" for="defaultCheck1">
+                            <strong>Disponibile anche in digitale</strong>
+                        </label>
+                    </div>
+                </div>
+                <div class="col-12">
+                    <div class="button">
+                        <button type="button" class="btn btn-primary">Aggiungi Libro</button>
+                    </div>
+                </div>
+            </div>
         </div>
     </main>
     <!-- insert JS -->
